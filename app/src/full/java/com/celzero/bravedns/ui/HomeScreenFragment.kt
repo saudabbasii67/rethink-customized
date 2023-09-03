@@ -37,6 +37,7 @@ import android.util.Log
 import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultLauncher
@@ -74,6 +75,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.koin.android.ext.android.inject
+import java.io.File
 import java.util.*
 import java.util.concurrent.TimeUnit
 
@@ -109,6 +111,28 @@ class HomeScreenFragment : Fragment(R.layout.fragment_home_screen) {
         observeChipStates()
         observeLogsCount()
         updateConfigureDnsChip()
+
+
+        b.rootButton.setOnClickListener {
+            // Display a toast message when the "ROOT" button is clicked
+            if (isDeviceRooted()) {
+                // Handle rooted device logic
+                Log.d("TAG", "Root detected")
+                Toast.makeText(
+                    requireContext().applicationContext,
+                    "Root detected",
+                    Toast.LENGTH_SHORT
+                ).show()
+            } else {
+                // Handle non-rooted device logic
+                Toast.makeText(
+                    requireContext().applicationContext,
+                    "Root not detected",
+                    Toast.LENGTH_SHORT
+                ).show()
+                Log.d("TAG", "Device is not rooted")
+            }
+        }
     }
 
     private fun initializeValues() {
@@ -127,7 +151,36 @@ class HomeScreenFragment : Fragment(R.layout.fragment_home_screen) {
         b.fhsCardRulesTv.text = getString(R.string.lbl_rules).replaceFirstChar(Char::titlecase)
         b.fhsCardLogsTv.text = getString(R.string.lbl_logs).replaceFirstChar(Char::titlecase)
     }
+    fun isDeviceRooted(): Boolean {
+        val buildTags = android.os.Build.TAGS
+        if (buildTags != null && buildTags.contains("test-keys")) {
+            return true
+        }
 
+        try {
+            val paths = arrayOf(
+                "/system/app/Superuser.apk",
+                "/sbin/su",
+                "/system/bin/su",
+                "/system/xbin/su",
+                "/data/local/xbin/su",
+                "/data/local/bin/su",
+                "/system/sd/xbin/su",
+                "/system/bin/failsafe/su",
+                "/data/local/su"
+            )
+
+            for (path in paths) {
+                if (File(path).exists()) {
+                    return true
+                }
+            }
+        } catch (e: Exception) {
+            // Handle exceptions as needed
+        }
+
+        return false
+    }
     private fun handleQuickSettingsChips() {
         if (!canShowChips()) {
             b.chipsPrograms.visibility = View.GONE

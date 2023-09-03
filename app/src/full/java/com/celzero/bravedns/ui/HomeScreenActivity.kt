@@ -28,6 +28,7 @@ import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -93,6 +94,7 @@ import java.io.File
 import java.util.Calendar
 import java.util.concurrent.Executor
 import java.util.concurrent.TimeUnit
+import android.view.View
 
 class HomeScreenActivity : AppCompatActivity(R.layout.activity_home_screen) {
     private val b by viewBinding(ActivityHomeScreenBinding::bind)
@@ -118,24 +120,16 @@ class HomeScreenActivity : AppCompatActivity(R.layout.activity_home_screen) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        // Get a random string from the Strings class.
-//        val randomString = Strings().getRandomString()
-//
-//        // Display the random string to the user.
-//        Toast.makeText(this, randomString, Toast.LENGTH_LONG).show()
-//        // Get a random string from the Strings class.
+
+        // ================ ROOT DETECTION ===========
+
+
+
+
         val randomString = Strings().getRandomString()
-
-        // Create an AlertDialog.Builder object.
         val builder = AlertDialog.Builder(this)
-
-        // Set the title of the dialog.
-        builder.setTitle("Security Tip!!!")
-
-        // Set the message of the dialog.
+        builder.setTitle("Security Tip")
         builder.setMessage(randomString)
-
-        // Create the dialog and show it to the user.
         builder.create().show()
 
 
@@ -750,5 +744,6 @@ class HomeScreenActivity : AppCompatActivity(R.layout.activity_home_screen) {
     private fun io(f: suspend () -> Unit) {
         lifecycleScope.launch { withContext(Dispatchers.IO) { f() } }
     }
+
 
 }
