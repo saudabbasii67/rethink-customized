@@ -113,6 +113,7 @@ class HomeScreenFragment : Fragment(R.layout.fragment_home_screen) {
         updateConfigureDnsChip()
 
 
+        b.rootButton.setBackgroundResource(R.drawable.home_screen_button_start_bg)
         b.rootButton.setOnClickListener {
             // Display a toast message when the "ROOT" button is clicked
             if (isDeviceRooted()) {

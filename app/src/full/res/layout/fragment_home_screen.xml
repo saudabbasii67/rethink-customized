@@ -471,6 +471,15 @@
 
                     <!-- Your existing buttons go here -->
                     <Button
+                        android:id="@+id/root_button"
+                        style="@style/Button.HomeScreen.Main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ROOT Check"
+                        android:background="#1D86E8" />
+
+
+                    <Button
                         android:id="@+id/home_fragment_pause_icon"
                         android:layout_width="60dp"
                         android:layout_height="48dp"
@@ -489,11 +498,7 @@
                         android:paddingEnd="20dp"
                         android:text="@string/hsf_start_btn_state" />
                     <!-- Add the "ROOT" button at the bottom -->
-                    <Button
-                        android:id="@+id/root_button"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="ROOT Check" />
+
 
                     <Button
                         android:id="@+id/home_fragment_bottom_sheet_icon"
