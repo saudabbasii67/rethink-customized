@@ -14,10 +14,10 @@
     <color name="colorRed_A400">#FF1744</color>
 
     <!-- dots inactive colors -->
-    <color name="dot_dark_screen1">#2278d4</color>
-    <color name="dot_dark_screen2">#2278d4</color>
-    <color name="dot_dark_screen3">#2278d4</color>
-    <color name="dot_dark_screen4">#2278d4</color>
+    <color name="dot_dark_screen1">#673AB7</color>
+    <color name="dot_dark_screen2">#673AB7</color>
+    <color name="dot_dark_screen3">#673AB7</color>
+    <color name="dot_dark_screen4">#9C27B0</color>
 
     <!-- dots active colors -->
     <color name="dot_light_screen1">#93c6fd</color>
@@ -45,15 +45,17 @@
     <color name="colorSecondary">#444444</color>
     <color name="colorBackgroundFloating">#636363</color>
 
-    <color name="navBarColor">#2d2c2c</color>
+    <color name="navBarColor">#FFFFFF</color>
 
+    <color name="navvv2">#8F72C3</color>
     <color name="accentGood">#18ffff</color>
     <color name="accentBad">#ff4081</color>
 
     <color name="background">#393939</color>
     <color name="divider">#444444</color>
+
     <color name="border">#77959595</color>
-    <color name="homeScreenBtnBackground">#2d2c2c</color>
+    <color name="homeScreenBtnBackground">#D1D0D0</color>
     <color name="textViewBackground">#1A000000</color>
     <color name="buttonBackground">#006f67</color>
     <color name="chipBackgroundColor">#006f67</color>
@@ -101,24 +103,25 @@
 
     <!-- theme light -->
     <color name="colorPrimaryLight">#ececec</color>
-    <color name="colorPrimaryDarkLight">#1e88e5</color>
+    <color name="colorPrimaryDarkLight">#673AB7</color>
     <color name="colorSecondaryLight">#1e88e5</color>
     <color name="colorBackgroundFloatingLight">#efefef</color>
 
-    <color name="navBarColorLight">#FFFFFF</color>
+    <color name="navBarColorLight">#DFDFDF</color>
 
-    <color name="accentGoodLight">#005cb2</color>
+    <color name="accentGoodLight">#673AB7</color>
     <color name="accentBadLight">#ff1744</color>
 
     <color name="backgroundLight">#fafafa</color>
     <color name="dividerLight">#eeeeee</color>
+
     <color name="borderLight">#77757575</color>
     <color name="textViewBackgroundLight">#1A000000</color>
-    <color name="homeScreenBtnBackgroundLight">#005cb2</color>
-    <color name="buttonBackgroundLight">#1e88e5</color>
+    <color name="homeScreenBtnBackgroundLight">#673AB7</color>
+    <color name="buttonBackgroundLight">#673AB7</color>
     <color name="tabIndicatorLight">#ff4081</color>
 
-    <color name="switchNormalLight">#757575</color>
+    <color name="switchNormalLight">#9C27B0</color>
     <color name="colorControlActivatedLight">#1e88e5</color>
     <color name="colorControlActivatedBadLight">#ff1744</color>
     <color name="colorSwitchThumbNormalLight">#1B1B1E</color>
@@ -137,17 +140,17 @@
     <color name="chipBgNeutralLight">#2cc17900</color>
     <color name="chipTextNeutralLight">#895601</color>
 
-    <color name="chipColorBgHighlightLight">#901e88e5</color>
+    <color name="chipColorBgHighlightLight">#673AB7</color>
 
     <color name="strokeLight">#000000</color>
     <color name="fillLight">#00000000</color>
 
-    <color name="primaryTextLight">#000000</color>
+    <color name="primaryTextLight">#FFFFFF</color>
     <color name="primaryLightColorTextLight">#BF000000</color>
     <color name="primaryDarkColorTextLight">#FFFFFF</color>
     <color name="chipTextColorLight">#FFFFFF</color>
     <color name="invertedPrimaryTextLight">#FFFFFF</color>
-    <color name="secondaryTextLight">#005cb2</color>
+    <color name="secondaryTextLight">#673AB7</color>
     <color name="textColorAccentBadLight">#CCC51162</color>
 
     <color name="fabBackgroundLight">#FFFFFF</color>
@@ -171,7 +174,7 @@
     <color name="colorSecondaryBlack">#4fc3f7</color>
     <color name="colorBackgroundFloatingBlack">#383838</color>
 
-    <color name="navBarColorBlack">#000000</color>
+    <color name="navBarColorBlack">#FFFFFF</color>
 
     <color name="accentGoodBlack">#4fc3f7</color>
     <color name="accentBadBlack">#ff4081</color>
@@ -181,7 +184,7 @@
     <color name="dividerBlack">#000000</color>
     <color name="borderBlack">#77959595</color>
     <color name="homeScreenBtnBackgroundBlack">#2d2c2c</color>
-    <color name="buttonBackgroundBlack">#4fc3f7</color>
+    <color name="buttonBackgroundBlack">#8F72C3</color>
     <color name="textViewBackgroundBlack">#000000</color>
     <color name="tabIndicatorBlack">#4fc3f7</color>
 
@@ -197,8 +200,8 @@
     <color name="primaryTextBlack">#FDFDFD</color>
     <color name="primaryLightColorTextBlack">#BFFDFDFD</color>
     <color name="chipTextColorBlack">#ececec</color>
-    <color name="invertedPrimaryTextBlack">#4fc3f7</color>
-    <color name="secondaryTextBlack">#4fc3f7</color>
+    <color name="invertedPrimaryTextBlack">#8F72C3</color>
+    <color name="secondaryTextBlack">#8F72C3</color>
     <color name="textColorAccentBadBlack">#CCFF5252</color>
 
     <color name="chipBgPositiveBlack">#33004D40</color>
@@ -206,7 +209,7 @@
     <color name="chipBgNegativeBlack">#33B71C1C</color>
     <color name="chipTextNegativeBlack">#CCFF5252</color>
     <color name="chipColorBgNormalBlack">#444444</color>
-    <color name="chipColorBgHighlightBlack">#904fc3f7</color>
+    <color name="chipColorBgHighlightBlack">#8F72C3</color>
     <color name="chipBgNeutralBlack">#33c17900</color>
     <color name="chipTextNeutralBlack">#CCffd149</color>
 

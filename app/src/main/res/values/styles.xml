@@ -37,10 +37,10 @@
         <item name="android:splitMotionEvents">false</item>
         <item name="android:windowEnableSplitTouch">false</item>
         <item name="android:searchViewStyle">@style/SearchView.Custom</item>
-        <item name="android:navigationBarColor">@color/navBarColor</item>
+        <item name="android:navigationBarColor">@color/navvv2</item>
 
         <item name="background">@color/background</item>
-        <item name="navBarColor">@color/navBarColor</item>
+        <item name="navBarColor">@color/navvv2</item>
         <item name="divider">@color/divider</item>
         <item name="border">@color/border</item>
         <item name="homeScreenBtnBackground">@color/homeScreenBtnBackground</item>
@@ -95,11 +95,15 @@
         <item name="accentGood">@color/accentGoodLight</item>
         <item name="accentBad">@color/accentBadLight</item>
 
+
+
+
+
         <item name="switchNormal">@color/switchNormalLight</item>
         <item name="colorSwitchThumbNormal">@color/colorSwitchThumbNormalLight</item>
         <item name="controlActivated">@color/colorControlActivatedLight</item>
         <item name="controlActivatedBad">@color/colorControlActivatedBadLight</item>
-        <item name="android:navigationBarColor">@color/switchNormalLight</item>
+        <item name="android:navigationBarColor">@color/navvv2</item>
         <item name="colorSurface">@color/colorSurfaceLight</item>
 
         <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Action</item>
@@ -109,14 +113,14 @@
         <item name="android:searchViewStyle">@style/SearchView.Custom</item>
 
         <item name="background">@color/backgroundLight</item>
-        <item name="navBarColor">@color/navBarColorLight</item>
+        <item name="navBarColor">@color/navvv2</item>
         <item name="divider">@color/dividerLight</item>
         <item name="border">@color/borderLight</item>
         <item name="textViewBackground">@color/textViewBackgroundLight</item>
         <item name="homeScreenBtnBackground">@color/homeScreenBtnBackgroundLight</item>
         <item name="buttonBackground">@color/buttonBackgroundLight</item>
 
-        <item name="primaryTextColor">@color/primaryTextLight</item>
+        <item name="primaryTextColor">@color/backgroundBlack</item>
         <item name="primaryLightColorText">@color/primaryLightColorTextLight</item>
         <item name="invertedPrimaryTextColor">@color/invertedPrimaryTextLight</item>
         <item name="chipTextColor">@color/chipTextColorLight</item>
@@ -158,13 +162,14 @@
         <item name="colorBackgroundFloating">@color/colorPrimaryBlack</item>
         <item name="android:colorBackgroundFloating">@color/colorPrimaryBlack</item>
 
-        <item name="android:colorAccent">@color/accentGoodBlack</item>
-        <item name="colorAccent">@color/accentGoodBlack</item>
-        <item name="accentGood">@color/accentGoodBlack</item>
+        <item name="android:colorAccent">@color/accentGoodLight</item>
+        <item name="colorAccent">@color/accentGoodLight</item>
+        <item name="accentGood">@color/accentGoodLight</item>
+
         <item name="accentBad">@color/accentBadBlack</item>
 
-        <item name="navBarColor">@color/navBarColorBlack</item>
-        <item name="android:navigationBarColor">@color/navBarColorBlack</item>
+        <item name="navBarColor">@color/navvv2</item>
+        <item name="android:navigationBarColor">@color/navvv2</item>
         <item name="tabIndicator">@color/tabIndicatorBlack</item>
 
         <item name="switchNormal">@color/switchNormalBlack</item>
@@ -248,7 +253,8 @@
         <item name="colorControlActivated">@color/colorControlActivatedBad</item>
         <item name="android:colorForeground">@color/switchNormal</item>
         <item name="android:windowIsFloating">false</item>
-        <item name="android:navigationBarColor">@color/navBarColor</item>
+        <item name="android:navigationBarColor">@color/backgroundLight</item>
+
 
         <item name="firewallNoRuleToggleBtnTxt">@color/firewallNoRuleToggleBtnTxt</item>
         <item name="firewallNoRuleToggleBtnBg">@color/firewallNoRuleToggleBtnBg</item>
@@ -269,7 +275,7 @@
         <item name="colorControlActivated">@color/colorControlActivatedBadLight</item>
         <item name="android:colorForeground">@color/switchNormalLight</item>
         <item name="android:windowIsFloating">false</item>
-        <item name="android:navigationBarColor">@color/navBarColorLight</item>
+        <item name="android:navigationBarColor">@color/navvv2</item>
 
         <item name="firewallNoRuleToggleBtnTxt">@color/firewallNoRuleToggleBtnTxtLight</item>
         <item name="firewallNoRuleToggleBtnBg">@color/firewallNoRuleToggleBtnBgLight</item>
@@ -290,7 +296,7 @@
         <item name="colorControlActivated">@color/colorControlActivatedBadBlack</item>
         <item name="android:colorForeground">@color/switchNormalBlack</item>
         <item name="android:windowIsFloating">false</item>
-        <item name="android:navigationBarColor">@color/navBarColorBlack</item>
+        <item name="android:navigationBarColor">@color/navvv2</item>
 
         <item name="firewallNoRuleToggleBtnTxt">@color/firewallNoRuleToggleBtnTxtBlack</item>
         <item name="firewallNoRuleToggleBtnBg">@color/firewallNoRuleToggleBtnBgBlack</item>

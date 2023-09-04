@@ -50,8 +50,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="160dp"
             android:baselineAligned="true"
+            android:layout_marginTop="25dp"
             android:orientation="horizontal"
             android:weightSum="1">
 
@@ -59,12 +60,13 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6666"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                >
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fhs_card_apps_top_ll"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:clipToPadding="true"
                     app:cardBackgroundColor="?attr/homeScreenBtnBackground"
                     app:cardCornerRadius="8dp"
@@ -87,8 +89,8 @@
                         <TextView
                             android:id="@+id/fhs_card_apps"
                             style="@style/TextAppearance.Widget.HomeScreen.Desc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
                             android:layout_marginBottom="10dp"
                             android:ellipsize="marquee"
                             android:marqueeRepeatLimit="marquee_forever"
@@ -104,6 +106,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="@string/apps_info_title"
+
                             android:textColor="?attr/invertedPrimaryTextColor"
                             android:textSize="@dimen/large_font_text_view"
                             app:drawableEndCompat="@drawable/ic_right_arrow_chip" />
@@ -114,7 +117,7 @@
 
             <LinearLayout
                 android:id="@+id/fhs_card_rules_ll"
-                android:layout_width="0dp"
+                android:layout_width="80dp"
                 android:baselineAligned="true"
                 android:layout_height="match_parent"
                 android:layout_weight="0.3333"
@@ -141,17 +144,13 @@
                             android:id="@+id/fhs_card_domain_rules_count"
                             style="@style/TextAppearance.Widget.HomeScreen.Desc"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ellipsize="marquee"
-                            android:marqueeRepeatLimit="marquee_forever"
-                            android:singleLine="true"
-                            android:textSize="@dimen/default_font_text_view" />
+                            android:layout_height="wrap_content" />
 
                         <TextView
                             android:id="@+id/fhs_card_ip_rules_count"
                             style="@style/TextAppearance.Widget.HomeScreen.Desc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
                             android:layout_below="@id/fhs_card_domain_rules_count"
                             android:layout_marginBottom="10dp"
                             android:ellipsize="marquee"
@@ -170,6 +169,7 @@
                             android:drawablePadding="-10dp"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
+
                             android:layout_below="@id/fhs_card_ip_rules_count"
                             android:padding="5dp"
                             android:text="@string/lbl_rules"
@@ -183,7 +183,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="160dp"
             android:baselineAligned="true"
             android:orientation="horizontal"
             android:weightSum="1">
@@ -191,7 +191,7 @@
             <LinearLayout
                 android:id="@+id/fhs_card_dns_ll"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="0.3333"
                 android:orientation="vertical">
 
@@ -223,13 +223,13 @@
                         <TextView
                             android:id="@+id/fhs_card_dns_latency"
                             style="@style/TextAppearance.Widget.HomeScreen.Desc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
                             android:layout_marginBottom="10dp"
                             android:ellipsize="marquee"
                             android:marqueeRepeatLimit="marquee_forever"
+                            android:maxLines="@integer/material_motion_duration_long_2"
                             android:paddingBottom="5dp"
-                            android:singleLine="true"
                             android:textSize="@dimen/default_font_text_view" />
 
                         <TextView
@@ -240,6 +240,7 @@
                             android:drawablePadding="-10dp"
                             android:gravity="center"
                             android:padding="5dp"
+
                             android:text="@string/dns_mode_info_title"
                             android:textColor="?attr/invertedPrimaryTextColor"
                             android:textSize="@dimen/large_font_text_view"
@@ -252,7 +253,7 @@
             <LinearLayout
                 android:id="@+id/fhs_card_firewall_ll"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="0.3333"
                 android:orientation="vertical">
 
@@ -286,11 +287,12 @@
                         <TextView
                             android:id="@+id/fhs_card_firewall_univ_rules"
                             style="@style/TextAppearance.Widget.HomeScreen.Desc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
                             android:layout_marginBottom="10dp"
                             android:paddingBottom="5dp"
                             android:textSize="@dimen/default_font_text_view"
+                            android:maxLines="@integer/material_motion_duration_long_2"
                             android:visibility="invisible" />
 
                         <TextView
@@ -302,6 +304,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="@string/firewall_mode_info_title"
+
                             android:textColor="?attr/invertedPrimaryTextColor"
                             android:textSize="@dimen/large_font_text_view"
                             app:drawableEndCompat="@drawable/ic_right_arrow_chip" />
@@ -312,7 +315,7 @@
             <LinearLayout
                 android:id="@+id/fhs_card_logs_ll"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="0.3333"
                 android:orientation="vertical">
 
@@ -346,13 +349,13 @@
                         <TextView
                             android:id="@+id/fhs_card_dns_logs_count"
                             style="@style/TextAppearance.Widget.HomeScreen.Desc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
                             android:layout_marginBottom="10dp"
                             android:ellipsize="marquee"
                             android:marqueeRepeatLimit="marquee_forever"
                             android:paddingBottom="5dp"
-                            android:singleLine="true"
+                            android:maxLines="@integer/material_motion_duration_long_2"
                             android:textSize="@dimen/default_font_text_view"
                             android:visibility="visible" />
 
@@ -366,6 +369,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="@string/lbl_logs"
+
                             android:textColor="?attr/invertedPrimaryTextColor"
                             android:textSize="@dimen/large_font_text_view"
                             app:drawableEndCompat="@drawable/ic_right_arrow_chip" />
@@ -391,6 +395,14 @@
                 android:layout_marginEnd="5dp"
                 app:chipSpacing="8dp"
                 app:singleSelection="false">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/root_button"
+                    style="@style/Chip.HomeScreen.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Root Check"
+                    app:chipIcon="@drawable/baseline_safety_check_24" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/fhs_whats_new_chip"
@@ -458,6 +470,7 @@
                 android:id="@+id/shimmer_view_container1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 app:shimmer_auto_start="false"
                 app:shimmer_base_alpha="0.85"
                 app:shimmer_dropoff="1"
@@ -470,13 +483,13 @@
                     android:orientation="vertical">
 
                     <!-- Your existing buttons go here -->
-                    <Button
-                        android:id="@+id/root_button"
-                        style="@style/Button.HomeScreen.Main"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="ROOT Check"
-                        android:background="#1D86E8" />
+<!--                    <Button-->
+<!--                        android:id="@+id/root_button"-->
+<!--                        style="@style/Button.HomeScreen.Main"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="ROOT Check"-->
+<!--                        android:background="#1D86E8" />-->
 
 
                     <Button
@@ -491,14 +504,13 @@
                         android:id="@+id/fhs_dns_on_off_btn"
                         style="@style/Button.HomeScreen.Main"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="65dp"
+
                         android:drawableStart="@drawable/ic_pause"
                         android:drawableEnd="@drawable/ic_arrow_down"
                         android:paddingStart="20dp"
                         android:paddingEnd="20dp"
                         android:text="@string/hsf_start_btn_state" />
-                    <!-- Add the "ROOT" button at the bottom -->
-
 
                     <Button
                         android:id="@+id/home_fragment_bottom_sheet_icon"
@@ -508,16 +520,8 @@
                         android:background="?android:attr/selectableItemBackground"
                         android:padding="10dp" />
 
-<!--                    &lt;!&ndash; Add the "ROOT" button at the bottom &ndash;&gt;-->
-<!--                    <Button-->
-<!--                        android:id="@+id/root_button"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="ROOT Check" />-->
+
                 </LinearLayout>
-
-
-
 
             </com.facebook.shimmer.ShimmerFrameLayout>
 
@@ -529,8 +533,6 @@
                 android:fontFamily="sans-serif-smallcaps"
                 android:textColor="?attr/accentBad"
                 android:textSize="@dimen/large_font_text_view" />
-
-
 
         </LinearLayout>
     </LinearLayout>
