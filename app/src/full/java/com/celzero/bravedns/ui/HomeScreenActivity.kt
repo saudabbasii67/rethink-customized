@@ -119,13 +119,6 @@ class HomeScreenActivity : AppCompatActivity(R.layout.activity_home_screen) {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
-        // ================ ROOT DETECTION ===========
-
-
-
-
         val randomString = Strings().getRandomString()
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Security Tip")
