@@ -265,6 +265,9 @@ class HomeScreenFragment : Fragment(R.layout.fragment_home_screen) {
             startFirewallActivity(FirewallActivity.Tabs.UNIVERSAL.screen)
         }
 
+        b.virusScannerBtn.setOnClickListener {
+            Toast.makeText(requireContext(), "clickkkkk", Toast.LENGTH_SHORT).show()
+        }
         b.fhsCardAppsLl.setOnClickListener { startAppsActivity() }
 
         b.fhsCardDnsLl.setOnClickListener {

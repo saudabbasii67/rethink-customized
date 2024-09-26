@@ -119,6 +119,7 @@ class HomeScreenActivity : AppCompatActivity(R.layout.activity_home_screen) {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         val randomString = Strings().getRandomString()
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Security Tip")
