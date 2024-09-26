@@ -482,14 +482,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Your existing buttons go here -->
-<!--                    <Button-->
-<!--                        android:id="@+id/root_button"-->
-<!--                        style="@style/Button.HomeScreen.Main"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="ROOT Check"-->
-<!--                        android:background="#1D86E8" />-->
+                    <!-- ==================== Virus Scanner Btn =============== -->
+                    <Button
+                        android:id="@+id/virus_scanner_btn"
+                        style="@style/Button.HomeScreen.Main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scan_now"
+                        android:background="#1D86E8" />
 
 
                     <Button
