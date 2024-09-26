@@ -265,9 +265,14 @@ class HomeScreenFragment : Fragment(R.layout.fragment_home_screen) {
             startFirewallActivity(FirewallActivity.Tabs.UNIVERSAL.screen)
         }
 
+//        =============== VIRUS SCANNER BUTTON OBSERVER ===============
         b.virusScannerBtn.setOnClickListener {
-            Toast.makeText(requireContext(), "clickkkkk", Toast.LENGTH_SHORT).show()
+            // Navigate to VirusScannerActivity when button is clicked
+            val intent = Intent(requireContext(), VirusScannerActivity::class.java)
+            startActivity(intent)
         }
+
+
         b.fhsCardAppsLl.setOnClickListener { startAppsActivity() }
 
         b.fhsCardDnsLl.setOnClickListener {

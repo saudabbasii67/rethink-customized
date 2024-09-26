@@ -15,6 +15,12 @@
         <activity
             android:name=".ui.FirewallActivity"
             android:finishOnTaskLaunch="true" />
+
+<!-- =================== Virus Scanner Activity ================= -->
+        <activity android:name=".ui.VirusScannerActivity"
+            android:label="Virus Scanner"
+            android:theme="@style/AppTheme" />
+
         <activity
             android:name=".ui.HomeScreenActivity"
             android:exported="true"
